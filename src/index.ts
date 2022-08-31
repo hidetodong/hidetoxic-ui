@@ -16,7 +16,7 @@ import 'uno.css'
 const app = createApp({
     template:`
         <div>
-            <HideButton icon="edit">普通按钮1231</HideButton>
+            <HideButton icon="edit">普通按钮121231231</HideButton>
         </div>
     `
 })
