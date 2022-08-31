@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>🔨 HIDETOXIC - UI Demo</h1>
+    <div id="app"></div>
+    <script type="module">
+      import style from "hidetoxic-ui/dist/assets/entry.41fd4e6e.css";
+      import { createApp } from "vue/dist/vue.esm-bundler.js";
+      import HidetoxicUi, {
+        HideButton,
+      } from "hidetoxic-ui/dist/hidetoxic-ui.esm.js";
+      createApp({
+        template: `
+        <div style="margin-bottom:20px;">
+            <HideButton color="blue">主要按钮</HideButton>
+            <HideButton color="green">绿色按钮</HideButton>
+            <HideButton color="gray">灰色按钮</HideButton>
+            <HideButton color="yellow">黄色按钮</HideButton>
+            <HideButton color="red">红色按钮</HideButton>
+        </div>
+        <div style="margin-bottom:20px;"
+        >
+            <HideButton color="blue" plain>朴素按钮</HideButton>
+            <HideButton color="green" plain>绿色按钮</HideButton>
+            <HideButton color="gray" plain>灰色按钮</HideButton>
+            <HideButton color="yellow" plain>黄色按钮</HideButton>
+            <HideButton color="red" plain>红色按钮</HideButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <HideButton size="small" plain>小按钮</HideButton>
+            <HideButton size="medium" plain>中按钮</HideButton>
+            <HideButton size="large" plain>大按钮</HideButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <HideButton color="blue" round plain icon="search">搜索按钮</HideButton>
+            <HideButton color="green" round plain icon="edit">编辑按钮</HideButton>
+            <HideButton color="gray" round plain icon="check">成功按钮</HideButton>
+            <HideButton color="yellow" round plain icon="message">提示按钮</HideButton>
+            <HideButton color="red" round plain icon="delete">删除按钮</HideButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <HideButton color="blue" round plain icon="search"></HideButton>
+            <HideButton color="green" round plain icon="edit"></HideButton>
+            <HideButton color="gray" round plain icon="check"></HideButton>
+            <HideButton color="yellow" round plain icon="message"></HideButton>
+            <HideButton color="red" round plain icon="delete"></HideButton>
+        </div>
+    `,
+      })
+        .use(HidetoxicUi)
+        .mount("#app");
+    </script>
+  </body>
+</html>
